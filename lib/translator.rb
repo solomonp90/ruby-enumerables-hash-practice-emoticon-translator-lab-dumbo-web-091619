@@ -17,7 +17,7 @@ end
 def get_japanese_emoticon(file,emoticon)
   # code goes here
 load_library(file)
-get_emoticon("grinning")
+
 end
 
 def get_english_meaning
