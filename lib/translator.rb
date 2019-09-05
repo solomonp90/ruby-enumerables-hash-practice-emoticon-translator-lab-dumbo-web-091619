@@ -16,13 +16,13 @@ end
 
 def get_japanese_emoticon(file,emoticon)
   # code goes here
-new_hash = {
-  emoticons:[],
-  meanings:{}
-}
-load_library(file)
-emoticon.each do |emoticon|
-new_hash[emoticons]= emoticon
+# new_hash = {
+#   emoticons:[],
+#   meanings:{}
+# }
+# load_library(file)
+# emoticon.each do |emoticon|
+# new_hash[emoticons]= emoticon
 
 end
 # emoticon.each do |emoticons|
