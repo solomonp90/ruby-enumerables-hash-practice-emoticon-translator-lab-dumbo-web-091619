@@ -18,7 +18,7 @@ def load_library(file)
   end
   hash
 end
-# ./lib/emoticons.yml
+
 
 
 
