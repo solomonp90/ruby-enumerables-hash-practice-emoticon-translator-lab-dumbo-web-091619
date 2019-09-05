@@ -17,7 +17,10 @@ end
 def get_japanese_emoticon(file,emoticon)
   # code goes here
 load_library(file)
-emoticon
+emoticon.each do |emoticon,translated|
+  emoticon+=translated
+
+end
 # emoticon.each do |emoticons|
 #
 # end
