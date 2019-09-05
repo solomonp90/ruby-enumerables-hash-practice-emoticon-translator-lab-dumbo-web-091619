@@ -16,7 +16,10 @@ end
 
 def get_japanese_emoticon(file,emoticon)
   # code goes here
-  load_library(file)
+hash = {}
+  load_library(file).each do |japn|
+    emoticon.each
+
 end
 
 def get_english_meaning
