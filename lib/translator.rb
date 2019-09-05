@@ -4,7 +4,7 @@ def load_library(file)
 hash = {"get_meaning"=>{},"get_emoticon"=>{}}
   YAML.load_file(file).each do |meaning,list|
      eng,japn= list
-    hash[get_emoticon][eng] = japanese
+    hash[get_emoticon][eng] = japn
     hash[get_meaning][japn] = meaning
  end
  hash
