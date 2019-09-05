@@ -14,8 +14,8 @@ end
 
 
 
-def get_japanese_emoticon(file,emoticon)
-  # code goes here
+# def get_japanese_emoticon(file,emoticon)
+#   code goes here
 # new_hash = {
 #   emoticons:[],
 #   meanings:{}
@@ -23,12 +23,17 @@ def get_japanese_emoticon(file,emoticon)
 # load_library(file)
 # emoticon.each do |emoticon|
 # new_hash[emoticons]= emoticon
-
-end
+#
+# end
 # emoticon.each do |emoticons|
 #
 # end
-end
+def get_japanese_emoticon(file,emoticon)
+  # code goes here	  hash_library = load_library(file)
+  hash_library["get_emoticon"][emoticon] ?
+    hash_library["get_emoticon"][emoticon] :
+    "Sorry, that emoticon was not found"
+end	end
 
 def get_english_meaning
   # code goes here
