@@ -12,6 +12,21 @@ end
 
 
 
+@@ -1,13 +1,33 @@
+# require modules here	require "yaml"
+
+
+ def load_library	def load_library(path)
+  # code goes here	  emoticons = YAML.load_file(path)
+  emojis = Hash.new()
+  emojis[:get_meaning] = {}
+  emojis[:get_emoticon] = {}
+  emoticons.each_pair do |meaning, (eng, jap)|
+    emojis[:get_meaning][jap] = meaning
+    emojis[:get_emoticon][eng] = jap
+  end
+  emojis
+end	end
 
 
 # def get_japanese_emoticon(file,emoticon)
