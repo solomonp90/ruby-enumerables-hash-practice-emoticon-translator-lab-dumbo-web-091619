@@ -27,7 +27,9 @@ def load_library	def load_library(path)
     emojis[:get_emoticon][eng] = jap
   end
   emojis
-end	end
+end
+
+end
 
 
 # def get_japanese_emoticon(file,emoticon)
