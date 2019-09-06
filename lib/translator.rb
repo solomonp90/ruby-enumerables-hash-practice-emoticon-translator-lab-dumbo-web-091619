@@ -18,7 +18,7 @@ require "yaml"
 
 
 
-def load_library
+def load_library(path)
   emojis = Hash.new()
   emojis[:get_meaning] = {}
   emojis[:get_emoticon] = {}
