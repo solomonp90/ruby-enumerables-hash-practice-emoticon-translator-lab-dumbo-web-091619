@@ -32,7 +32,7 @@ if jap_emoji
   return jap_emoji
 else
   return "Sorry, that emoticon was not found"
-end
+  end
 end
 
 
