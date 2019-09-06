@@ -25,28 +25,15 @@ def load_library(path)
 end
 
 
+def get_japanese_emoticon(path, emoticon)
+emojis = load_library(path)
+jap_emoji = emojis[:get_emoticon].select { |eng, jap| eng == emoticon }.values.first
+if jap_emoji
+  return jap_emoji
+else
+  return "Sorry, that emoticon was not found"
+end
 
-
-# def get_japanese_emoticon(file,emoticon)
-#   code goes here
-# new_hash = {
-#   emoticons:[],
-#   meanings:{}
-# }
-# load_library(file)
-# emoticon.each do |emoticon|
-# new_hash[emoticons]= emoticon
-#
-# end
-# emoticon.each do |emoticons|
-#
-# end
-# def get_japanese_emoticon(file,emoticon)
-#   hash_library = load_library(file)
-#   hash_library["get_emoticon"][emoticon] ?
-#     hash_library["get_emoticon"][emoticon] :
-#     "Sorry, that emoticon was not found"
-# end
 
 
 def get_english_meaning
