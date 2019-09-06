@@ -12,12 +12,6 @@ require "yaml"
 
 
 
-
-
-
-
-
-
 def load_library(path)
   emoticons = YAML.load_file(path)
   emojis = Hash.new()
@@ -28,7 +22,7 @@ def load_library(path)
     emojis[:get_emoticon][eng] = jap
   end
   emojis
-end	
+end
 
 
 
