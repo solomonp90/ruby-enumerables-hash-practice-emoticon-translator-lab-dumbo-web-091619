@@ -14,7 +14,7 @@ require "yaml"
 
 def load_library(path)
   emoticons = YAML.load_file(path)
-  emojis = Hash.new()
+  emojis = {}
   emojis[:get_meaning] = {}
   emojis[:get_emoticon] = {}
   emoticons.each_pair do |meaning, (eng, jap)|
