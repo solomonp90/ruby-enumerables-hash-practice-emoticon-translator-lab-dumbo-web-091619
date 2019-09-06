@@ -13,15 +13,15 @@ require "yaml"
 
 
 def load_library(path)
-  emoticons = YAML.load_file(path)
-  emojis = {}
-  emojis[:get_meaning] = {}
-  emojis[:get_emoticon] = {}
-  emoticons.each_pair do |meaning, (eng, jap)|
-    emojis[:get_meaning][jap] = meaning
-    emojis[:get_emoticon][eng] = jap
-  end
-  emojis
+  # emoticons = YAML.load_file(path)
+  # emojis = {}
+  # emojis[:get_meaning] = {}
+  # emojis[:get_emoticon] = {}
+  # emoticons.each_pair do |meaning, (eng, jap)|
+  #   emojis[:get_meaning][jap] = meaning
+  #   emojis[:get_emoticon][eng] = jap
+  # end
+  # emojis
 end
 
 
