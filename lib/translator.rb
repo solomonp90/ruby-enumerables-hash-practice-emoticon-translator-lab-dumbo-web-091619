@@ -35,7 +35,11 @@ else
   end
 end
 
-
-def get_english_meaning
-  # code goes here
-end
+def get_english_meaning(path, emoticon)
+  emojis = load_library(path)
+  eng_meaning = emojis[:get_meaning].select { |jap, meaning| jap == emoticon }.values.first
+  if eng_meaning
+    return eng_meaning
+  else
+    return "Sorry, that emoticon was not found"
+  end
