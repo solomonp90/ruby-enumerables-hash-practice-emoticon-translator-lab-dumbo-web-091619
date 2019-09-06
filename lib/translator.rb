@@ -18,7 +18,7 @@ require "yaml"
 
 
 
-def load_library	
+def load_library
   emojis = Hash.new()
   emojis[:get_meaning] = {}
   emojis[:get_emoticon] = {}
@@ -29,7 +29,7 @@ def load_library
   emojis
 end
 
-end
+
 
 
 # def get_japanese_emoticon(file,emoticon)
